@@ -20,10 +20,11 @@
 			<input type="submit" value="sign-up" />-->
 			<?php es_subbox($namefield = "NO", $desc = "", $group = "Public"); ?>
 		</div>
-
-
-
 	</footer>
+
+	<div id="widget-area" class="widget-area" role="complementary">
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div><!-- .widget-area -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">

@@ -80,7 +80,7 @@ footer#colophon {
 	border-top: 20px solid black;
 	border-bottom: 20px solid black;
 	max-width: 100%;
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 }
 
 #page #sidebar {
@@ -315,6 +315,23 @@ footer#subscribe-nc form .es_button input[type="submit"] {
 
 footer#subscribe-nc form .es_lablebox {
 	display: none;
+}
+
+#widget-area {
+	margin-top: 80px;
+}
+
+#widget-area aside {
+	margin: 0;
+	text-align: center;
+}
+
+#widget-area aside h2 {
+	display: none;
+}
+
+#widget-area aside a {
+	font-size: 24px;
 }
 
 @media screen and (min-width: 59.6875em) {
