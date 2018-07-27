@@ -1,0 +1,382 @@
+/*
+ Theme Name:   NewConsensus Theme
+ Theme URI:    http://newconsensus.net/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Alexey K.
+ Author URI:   http://newconsensus.net
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, single-column, no-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-Reg.otf") format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-RegItalic.otf") format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-Light.otf") format('opentype');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-LightItalic.otf") format('opentype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/Proxima-Nova-Semibold.ttf") format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-Sbold.otf") format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url("fonts/ProximaNova-SboldItalic.otf") format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+html {
+	background-color: white;
+}
+
+body {
+	font-family: "ProximaNova", sans-serif;
+	background-color: white;
+}
+
+body::before {
+	display: none;
+}
+
+footer#colophon {
+	display: none;
+}
+
+#page {
+	background-color: white;
+	position: relative;
+	border-top: 20px solid black;
+	border-bottom: 20px solid black;
+	max-width: 100%;
+	padding-bottom: 100px;
+}
+
+#page #sidebar {
+	position: relative !important;
+	float: none;
+	display: flex;
+	width: auto;
+	flex-direction: column-reverse;
+	padding-top: 80px;
+	max-width: 581px;
+	margin: 0 auto;
+}
+
+#page #sidebar #masthead {
+	margin: 0;
+}
+
+#page #sidebar #masthead .site-branding {
+	text-align: center;
+	pointer-events: none;
+	margin-top: 90px;
+	margin-bottom: 60px;
+}
+
+#page #sidebar #masthead .site-branding .site-title a {
+	font-size: 36px;
+	text-decoration: line-through;
+	font-weight: normal;
+	color: black;
+	text-transform: uppercase;
+	opacity: 1;
+	line-height: 1.15;
+	letter-spacing: 4.5px;
+	font-weight: 500;
+}
+
+#page #sidebar #secondary #site-navigation #menu-primary {
+	display: flex;
+	text-align: center;
+	border: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+#page #sidebar #secondary #site-navigation #menu-primary li {
+	border: 0;
+	margin: 0;
+}
+
+#page #sidebar #secondary #site-navigation #menu-primary li > a {
+	font-size: 18px;
+	color: #a5a5a5;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2.25px;
+}
+
+#page #sidebar #secondary #site-navigation #menu-primary li + li > a::before {
+	content: "/";
+	margin: 0 8px;
+	display: inline-block;
+}
+
+#page #sidebar #masthead .site-branding .site-description {
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	opacity: 1;
+	margin-top: 0;
+	line-height: 1.15;
+	letter-spacing: 4.5px;
+	display: block;
+}
+
+#page #sidebar #secondary {
+	display: block;
+	box-shadow: none;
+	border: 0;
+	background-color: transparent;
+}
+
+#page #sidebar #site-navigation {
+	margin: 0;
+}
+
+#page #content {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+
+#page #content #primary #main {
+
+padding-bottom: 0;
+}
+
+#page #content #primary #main article {
+	border: 0;
+	box-shadow: none;
+	max-width: 581px;
+	margin: 0 auto;
+}
+
+#page #content #primary #main footer.entry-footer {
+	display: none;
+}
+
+#page #main .entry-header {
+	display: none;
+}
+
+.custom-logo-link {
+	display: none;
+}
+
+.theme-logo-fixed {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 132px;
+	height: 132px;
+	background: transparent url("images/nc_logo.png");
+}
+
+#page .entry-content {
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+}
+
+#page .site-header {
+	background-color: transparent;
+	border-bottom: 0;
+	padding: 0;
+}
+
+.secondary-toggle {
+	display: none;
+}
+
+.site-branding {
+	padding-right: 0;
+}
+
+footer#subscribe-nc {
+	background-color: #f2f2f2;
+	max-width: 831px;
+	margin: 0 auto;
+	min-height: 100px;
+	margin-top: 120px;
+	box-sizing: border-box;
+	padding: 48px 170px;
+}
+
+footer#subscribe-nc span.nc-footer-title {
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 2.45px;
+	text-align: center;
+	display: block;
+}
+
+footer#subscribe-nc span.nc-footer-text {
+	font-size: 15px;
+	margin-top: 20px;
+	font-weight: normal;
+	letter-spacing: 1.88px;
+	display: block;
+}
+
+footer#subscribe-nc form {
+	margin-top: 35px;
+	display: flex;
+}
+
+footer#subscribe-nc form input[type="email"] {
+	background-color: white;
+	font-size: 15px;
+	letter-spacing: 1.88px;
+	font-weight: normal;
+	color: #cdcdcd;
+}
+
+footer#subscribe-nc form input[type="submit"] {
+	padding: 15px 60px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 300;
+	font-family: "ProximaNova", sans-serif;
+	background-color: black;
+}
+
+@media screen and (min-width: 59.6875em) {
+	#page #sidebar {
+		margin: 0 auto;
+		padding: 84px 0 0 0;
+		max-width: 581px;
+	}
+	#page main.site-main {
+		padding-top: 0;
+	}
+	#page main.site-main article {
+		padding-top: 0;
+		margin: 0 auto;
+		max-width: 581px;
+	}
+	#page main.site-main article .entry-content {
+		padding: 0;
+		text-align: justify;
+	}
+	#page .site-header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 55em) {
+	.site-branding {
+		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 46.25em) {
+	.site-branding {
+		padding-right: 0;
+		min-height: auto;
+	}
+}
+
+@media screen and (min-width: 38.75em) {
+	.site-main {
+		padding: 0;
+	}
+	.entry-content, .entry-summary {
+		padding: 0;
+	}
+	#page main.site-main article,
+	#page main.site-main article.hentry {
+		padding-top: 0;
+	}
+	#page #sidebar #secondary {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 38.75em) {
+	.theme-logo-fixed {
+		width: 80px;
+		height: 80px;
+		background-size: contain;
+	}
+	#page #sidebar #masthead .site-branding .site-description {
+		font-size: 19px;
+	}
+	#page #sidebar #masthead .site-branding .site-title a {
+		font-size: 19px;
+	}
+	footer#subscribe-nc {
+		background-color: #f2f2f2;
+		max-width: 831px;
+		margin: 0 auto;
+		min-height: 100px;
+		margin-top: 60px;
+		box-sizing: border-box;
+		padding: 48px 48px;
+	}
+
+	footer#subscribe-nc form {
+		flex-direction: column;
+	}
+
+	footer#subscribe-nc form input[type="email"] {
+		height: 48px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#page #sidebar #secondary #site-navigation #menu-primary li > a {
+		font-size: 12px;
+	}
+	#page #sidebar #secondary #site-navigation #menu-primary li + li a::before {
+		margin: 0 6px;
+	}
+	.site-title {
+		font-size: 19px;
+	}
+	.site-description {
+		font-size: 19px;
+	}
+	#page main.site-main article,
+	#page main.site-main article.hentry {
+		padding-top: 0;
+	}
+}
