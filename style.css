@@ -294,6 +294,8 @@ footer#subscribe-nc form input[type="submit"] {
 	}
 	#page main.site-main article .entry-content {
 		padding: 0;
+	}
+	#page main.site-main article .entry-content p {
 		text-align: justify;
 	}
 	#page .site-header {

@@ -24,7 +24,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php //twentyfifteen_the_custom_logo(); ?>
-	<a class="theme-logo-fixed" href="<?php esc_url( home_url( '/' ) ) ?>"></a>
+	<a class="theme-logo-fixed" href="<?php echo esc_url( home_url( '/' ) ) ?>"></a>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
 	<div id="sidebar" class="sidebar">
