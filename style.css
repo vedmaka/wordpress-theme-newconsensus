@@ -96,6 +96,11 @@ footer#colophon {
 
 #page #sidebar #masthead {
 	margin: 0;
+	display: none;
+}
+
+.home #page #sidebar #masthead {
+	display: block;
 }
 
 #page #sidebar #masthead .site-branding {
@@ -189,8 +194,14 @@ padding-bottom: 0;
 	display: none;
 }
 
-#page #main .entry-header {
+.home #page #main .entry-header {
 	display: none;
+}
+
+#page #main .entry-header {
+	padding: 0;
+	margin-top: 60px;
+	text-transform: uppercase;
 }
 
 .custom-logo-link {
@@ -323,7 +334,7 @@ footer#subscribe-nc form .es_lablebox {
 	#page main.site-main article .entry-content {
 		padding: 0;
 	}
-	#page main.site-main article .entry-content p {
+	.home #page main.site-main article .entry-content p {
 		text-align: justify;
 	}
 	#page .site-header {
@@ -396,6 +407,9 @@ footer#subscribe-nc form .es_lablebox {
 
 	footer#subscribe-nc form input[type="email"] {
 		height: 48px;
+	}
+	#page #main .entry-header {
+		padding: 0 7.6923%;
 	}
 }
 
