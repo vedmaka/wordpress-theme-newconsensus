@@ -257,18 +257,41 @@ footer#subscribe-nc span.nc-footer-text {
 footer#subscribe-nc form {
 	margin-top: 35px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
-footer#subscribe-nc form input[type="email"] {
+footer#subscribe-nc form .es_textbox {
+	width: 70%;
+	padding: 0;
+	margin: 0;
+}
+
+footer#subscribe-nc form .es_button {
+	width: 30%;
+	padding: 0;
+	margin: 0;
+}
+
+footer#subscribe-nc form .es_msg {
+	width: 100%;
+	line-height: 22px;
+	font-size: 15px;
+	margin-top: 8px;
+	font-family: "ProximaNova", sans-serif;
+	color: green;
+	font-weight: 300;
+}
+
+footer#subscribe-nc form .es_textbox input[type="email"] {
 	background-color: white;
 	font-size: 15px;
 	letter-spacing: 1.88px;
 	font-weight: normal;
 	color: #cdcdcd;
+	height: 48px;
 }
 
-footer#subscribe-nc form input[type="submit"] {
-	padding: 15px 60px;
+footer#subscribe-nc form .es_button input[type="submit"] {
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
@@ -276,6 +299,11 @@ footer#subscribe-nc form input[type="submit"] {
 	font-weight: 300;
 	font-family: "ProximaNova", sans-serif;
 	background-color: black;
+	height: 48px;
+}
+
+footer#subscribe-nc form .es_lablebox {
+	display: none;
 }
 
 @media screen and (min-width: 59.6875em) {
@@ -358,6 +386,12 @@ footer#subscribe-nc form input[type="submit"] {
 
 	footer#subscribe-nc form {
 		flex-direction: column;
+	}
+
+	footer#subscribe-nc form .es_textbox,
+	footer#subscribe-nc form .es_button,
+	footer#subscribe-nc form .es_button input {
+		width: 100%;
 	}
 
 	footer#subscribe-nc form input[type="email"] {

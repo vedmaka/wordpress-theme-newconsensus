@@ -15,10 +15,14 @@
 	<footer id="subscribe-nc">
 		<span class="nc-footer-title">Stay Aware</span>
 		<span class="nc-footer-text">Sign up with your email to receive news & updates</span>
-		<form>
-			<input type="email" placeholder="Email Address" />
-			<input type="submit" value="sign-up" />
-		</form>
+		<div class="form">
+			<!--<input type="email" placeholder="Email Address" />
+			<input type="submit" value="sign-up" />-->
+			<?php es_subbox($namefield = "NO", $desc = "", $group = "Public"); ?>
+		</div>
+
+
+
 	</footer>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
