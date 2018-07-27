@@ -41,7 +41,7 @@
 @font-face {
 	font-family: "ProximaNova";
 	src: url("fonts/Proxima-Nova-Semibold.ttf") format('truetype');
-	font-weight: 600;
+	font-weight: 700;
 }
 
 @font-face {
@@ -251,6 +251,7 @@ footer#subscribe-nc span.nc-footer-text {
 	font-weight: normal;
 	letter-spacing: 1.88px;
 	display: block;
+	text-align: center;
 }
 
 footer#subscribe-nc form {
