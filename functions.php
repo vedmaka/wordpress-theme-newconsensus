@@ -18,8 +18,19 @@ function my_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-function custom_jetpack_default_image() {
-	return get_site_logo();
-}
+function fb_home_image( $tags ) {
+	if ( is_home() || is_front_page() ) {
+		// Remove the default blank image added by Jetpack
+		unset( $tags['og:image'] );
+		unset( $tags['twitter:image'] );
 
-add_filter( 'jetpack_open_graph_image_default', 'custom_jetpack_default_image' );
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		if($custom_logo_id) {
+			$fb_home_img = wp_get_attachment_image_url( $custom_logo_id, 'full', false );
+			$tags['og:image'] = esc_url( $fb_home_img );
+			$tags['twitter:image'] = esc_url( $fb_home_img );
+		}
+	}
+	return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
