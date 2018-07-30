@@ -17,3 +17,9 @@ function my_theme_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+function custom_jetpack_default_image() {
+	return get_site_logo();
+}
+
+add_filter( 'jetpack_open_graph_image_default', 'custom_jetpack_default_image' );

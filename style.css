@@ -409,11 +409,14 @@ footer#subscribe-nc form .es_lablebox {
 		height: 80px;
 		background-size: contain;
 	}
+	#page #sidebar #masthead .site-branding {
+		margin-top: 30px;
+	}
 	#page #sidebar #masthead .site-branding .site-description {
 		font-size: 19px;
 	}
 	#page #sidebar #masthead .site-branding .site-title a {
-		font-size: 19px;
+		font-size: 24px;
 	}
 	footer#subscribe-nc {
 		background-color: #f2f2f2;
@@ -445,10 +448,10 @@ footer#subscribe-nc form .es_lablebox {
 
 @media screen and (max-width: 480px) {
 	#page #sidebar #secondary #site-navigation #menu-primary li > a {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	#page #sidebar #secondary #site-navigation #menu-primary li + li a::before {
-		margin: 0 6px;
+		margin: 0 3px;
 	}
 	.site-title {
 		font-size: 19px;
@@ -459,5 +462,8 @@ footer#subscribe-nc form .es_lablebox {
 	#page main.site-main article,
 	#page main.site-main article.hentry {
 		padding-top: 0;
+	}
+	#secondary {
+		padding: 0 5px;
 	}
 }
