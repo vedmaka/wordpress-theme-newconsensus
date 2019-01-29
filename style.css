@@ -127,6 +127,8 @@ footer#colophon {
 	border: 0;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+
 }
 
 #page #sidebar #secondary #site-navigation #menu-primary li {
@@ -140,6 +142,12 @@ footer#colophon {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2.25px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#page #sidebar #secondary #site-navigation #menu-primary li > a:hover {
+	color: #8c8c8c;
 }
 
 #page #sidebar #secondary #site-navigation #menu-primary li + li > a::before {
@@ -477,8 +485,14 @@ footer#subscribe-nc form .es_lablebox {
 }
 
 @media screen and (max-width: 480px) {
+
+	#page #sidebar #secondary #site-navigation #menu-primary {
+		margin-top: 20px;
+		flex-direction: column;
+	}
+
 	#page #sidebar #secondary #site-navigation #menu-primary li > a {
-		font-size: 11px;
+		font-size: 14px;
 	}
 	#page #sidebar #secondary #site-navigation #menu-primary li + li a::before {
 		margin: 0 3px;
@@ -495,5 +509,10 @@ footer#subscribe-nc form .es_lablebox {
 	}
 	#secondary {
 		padding: 0 5px;
+	}
+	header#masthead.site-header {
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
