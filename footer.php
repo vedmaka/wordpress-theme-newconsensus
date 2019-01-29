@@ -13,7 +13,7 @@
 	</div><!-- .site-content -->
 
 	<footer id="subscribe-nc">
-		<span class="nc-footer-title">Stay Aware</span>
+		<span class="nc-footer-title">Stay in touch</span>
 		<span class="nc-footer-text">Sign up with your email to receive news & updates</span>
 		<div class="form">
 			<!--<input type="email" placeholder="Email Address" />

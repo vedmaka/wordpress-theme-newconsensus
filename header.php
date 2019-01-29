@@ -24,7 +24,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php //twentyfifteen_the_custom_logo(); ?>
-	<a class="theme-logo-fixed" href="<?php echo esc_url( home_url( '/' ) ) ?>"></a>
+    <?php 
+        if( $custom_logo_id = get_theme_mod('custom_logo') ){
+            $logo_img = wp_get_attachment_image_src( $custom_logo_id, 'full', false );
+        }
+    ?>
+    <!-- <?php echo print_r($logo_img, 1); ?>  -->
+	<a class="theme-logo-fixed" href="<?php echo esc_url( home_url( '/' ) ) ?>" style="<?php if( $logo_img ) { echo "background-image: url(".$logo_img[0].")"; } ?>"></a>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
 	<div id="sidebar" class="sidebar">
