@@ -203,6 +203,18 @@ padding-bottom: 0;
 	text-transform: uppercase;
 }
 
+#page #main .entry-header h1.entry-title {
+	margin-bottom: 0.6em;
+}
+
+#page #main article .entry-content h2 {
+	margin-bottom: 0.5em;
+}
+
+#page #main article .entry-content h3 {
+	margin-bottom: 0.56em;
+}
+
 .custom-logo-link {
 	display: none;
 }
