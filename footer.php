@@ -26,6 +26,10 @@
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div><!-- .widget-area -->
 
+	<a href="https://secure.actblue.com/donate/newconsensus" target="_blank" class="site-donation-button" rel="nofollow">
+		<img alt="Make a donation" src="https://s3.amazonaws.com/actblue-img/charities-badge-300px.png" />
+	</a>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php

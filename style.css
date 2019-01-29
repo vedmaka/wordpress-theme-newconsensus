@@ -228,6 +228,16 @@ padding-bottom: 0;
 	background: transparent url("images/nc_logo.png") 0 0 no-repeat;
 }
 
+.site-donation-button {
+	width: 200px;
+	margin: 50px auto 0 auto;
+	display: block;
+}
+
+.site-donation-button:hover {
+	filter: contrast(110%);
+}
+
 @media (max-width: 980px) {
     .theme-logo-fixed {
         width: 126px;
