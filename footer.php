@@ -30,6 +30,8 @@
 		<img alt="Make a donation" src="https://s3.amazonaws.com/actblue-img/charities-badge-300px.png" />
 	</a>
 
+	<a href="mailto:info@newconsensus.com" class="footer-mail-link">info@newconsensus.com</a>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<?php
